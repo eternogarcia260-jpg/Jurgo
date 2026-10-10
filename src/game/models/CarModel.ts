@@ -250,6 +250,10 @@ export class CarModel {
     this.damageSystem.repairWingVisuals(this.bodyBuilder);
   }
 
+  public repairVisualDamage(): void {
+    this.repairWingVisuals();
+  }
+
   public triggerBackfire(isHighRpm: boolean = false): void {
     this.effectsSystem.triggerBackfire(isHighRpm);
   }
